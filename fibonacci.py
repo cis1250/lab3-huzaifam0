@@ -14,7 +14,7 @@ print("User Input: ", input)
 a = 0
 b = 1
 
-if input >= 0:
+if input >= 0 and input.isdigit():
   for i in range(input): 
     print(a, end=' ')
     temp = a + b
