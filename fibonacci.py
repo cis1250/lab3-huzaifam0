@@ -13,12 +13,11 @@ print("User Input: ", input)
 a = 0
 b = 1
 
-if user_input.isdigit() and user_input >= 0:
-  input = int(user_input)
-  for i in range(input): 
+if user_input.isdigit() and int(user_input) >= 0:
+  for i in range(user_input): 
     print(a, end=' ')
-    temp = a + b
+    tempvar = a + b
     a = b
-    b = temp
+    b = tempvar
 else: 
   print("Expected output: Please enter a positive integer.")
