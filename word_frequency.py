@@ -37,6 +37,11 @@ while (is_sentence(user_sentence) == False):
 
 # makes them lowercase
 sentence = user_sentence.lower()
+# replaces punctuation with an empty line
+sentence = sentence.replace(".", "")
+sentence = sentence.replace("!", "")
+sentence = sentence.replace("?", "")
+sentence = sentence.replace(",", "")
 words = sentence.split()
 
 list1 = []
