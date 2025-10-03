@@ -16,7 +16,6 @@ b = 1
 
 if input >= 0:
   for i in range(input): 
-    print("Expected Output: ", a, end=' ')
     print(a, end=' ')
     temp = a + b
     a = b
