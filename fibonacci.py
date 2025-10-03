@@ -14,7 +14,8 @@ a = 0
 b = 1
 
 if user_input.isdigit() and int(user_input) >= 0:
-  for i in range(user_input): 
+  input = int(user_input)
+  for i in range(input): 
     print(a, end=' ')
     tempvar = a + b
     a = b
