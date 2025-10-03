@@ -13,7 +13,7 @@ print("User Input: ", input)
 a = 0
 b = 1
 
-if user_input >= 0 and user_input.isdigit():
+if user_input.isdigit() and user_input >= 0:
   input = int(user_input)
   for i in range(input): 
     print(a, end=' ')
