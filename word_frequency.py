@@ -34,4 +34,23 @@ user_sentence = input("Enter a sentence: ")
 while (is_sentence(user_sentence) == False):
     print("This does not meet the criteria for a sentence.")
     user_input = input("Enter a sentence: ")
+
+# makes them lowercase
+sentence = user_sentence.lower()
+words = sentence.split()
+
+list1 = []
+frequencies = []
+
+for word in words:
+    if word in list1:
+        i = list1.index(word)
+        frequencies[i] += 1
+    else:
+        list1.append(word)
+        frequencies.append(1)
+        
+for i in range(len(list1)):
+    print(list1[i] + ":", frequencies[i])
+
     
