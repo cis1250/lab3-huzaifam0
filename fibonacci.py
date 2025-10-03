@@ -6,7 +6,7 @@
 # Validate that the input is a positive integer.
 # Use a for loop to print the Fibonacci sequence up to that many terms.
 
-user_input = input("How many terms of the Fibonacci sequence do you want?")
+user_input = input("How many terms of the Fibonacci sequence do you want? ")
 input = int(user_input)
 print("User Input: ", input)
 
@@ -16,7 +16,7 @@ b = 1
 
 if input >= 0:
   for i in range(input): 
-    print(a, end=' ')
+    print("Expected Output: ", a, end=' ')
     temp = a + b
     a = b
     b = temp
